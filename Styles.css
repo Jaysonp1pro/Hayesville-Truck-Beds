@@ -1,33 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 body {
-    background-image: url("./imgs/BACKGROUND_METAL.jpg");
     font-family: 'Inter', sans-serif;
+
+    background-image: repeating-linear-gradient(90deg, rgba(198, 198, 198,0.05) 0px, rgba(198, 198, 198,0.05) 1px,transparent 1px, transparent 5px),repeating-linear-gradient(0deg, rgba(198, 198, 198,0.05) 0px, rgba(198, 198, 198,0.05) 1px,transparent 1px, transparent 5px),repeating-linear-gradient(0deg, rgba(198, 198, 198,0.06) 0px, rgba(198, 198, 198,0.06) 1px,transparent 1px, transparent 15px),repeating-linear-gradient(90deg, rgba(198, 198, 198,0.06) 0px, rgba(198, 198, 198,0.06) 1px,transparent 1px, transparent 15px),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
 }
 
-.title-text {
-    color: #dadada;
-    font-size: 2.75rem;
-    font-weight: 700;
+.titleTextDiv {
     text-align: center;
     vertical-align: bottom;
-    margin-top: 5%;
+    margin-top: 5vh;
 }
 
-.descriptionText {
-    font-size: 1.5rem;
-    font-weight: 550;
+#mainTitle {
+    color: #ff840a;
+    text-shadow: 0px 1px 2px #ab5907;
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+
+#titleDesc {
+    color: #415161;
+    font-size: 1.25rem;
+    font-weight: 425;
+    margin-top: 5px;
+    vertical-align: bottom;
 }
 
 .topBar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #202020;
+    background: #cacaca50;
     font-size: 1.25rem;
     font-weight: 500;
     color: white;
-    padding: 1rem 2rem;
 }
 
 .topButtons {
@@ -35,16 +42,88 @@ body {
     background-color: transparent;
     font-family: 'Inter', sans-serif;
     font-size: 1.25rem;
-}
-
-#aboutButton {
-    border-radius: 20%;
+    border-width: 0px;
+    color: white;
+	text-shadow: 0px 1px 4px #474747;
 }
 
 #aboutButton:hover {
-    color: green;
+    color: rgb(157, 184, 212);
+}
+
+#contactButton:hover {
+    color: rgb(157, 184, 212)
 }
 
 #companyName {
-    color: #ffe263
+    color: #ffffff;
+
+    padding: 1rem 2rem;
+    text-shadow: 0px 1px 4px #474747;
+}
+
+#authorizedGallery {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5vh auto;
+    width: 90vw;
+    height: 40vh;
+    padding: 0 40px;
+    box-sizing: border-box;
+    border: 2px solid #cacaca50;
+    border-radius: 25px;
+}
+
+.authorizedLogos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 15px;
+    height: 100%;
+}
+
+.authorizedLogos img {
+    max-height: 15vh;
+    width: 40vw;
+    display: block;
+}
+
+.locationInfo {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5vh auto;
+    width: 90vw;
+    height: 55vh;
+    padding: 0 40px;
+    box-sizing: border-box;
+    border: 2px solid #cacaca50;
+    border-radius: 25px;
+}
+
+.locationInfo iframe {
+    height: 95%;
+    width: 40vw;
+    border-radius: 8px;
+}
+
+.locationInfo tr, td {
+    padding: 0.25rem;
+}
+
+.locationInfo table {
+    table-layout: fixed;
+    overflow-y: hidden;
+}
+
+
+#authorizedGallery p {
+    color: #415161;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 650;
 }
