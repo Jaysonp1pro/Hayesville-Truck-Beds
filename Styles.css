@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 body {
-    background: #141414;
+    background-image: url("./imgs/BACKGROUND_METAL.jpg");
     font-family: 'Inter', sans-serif;
 }
 
@@ -24,7 +24,6 @@ body {
     justify-content: space-between;
     align-items: center;
     background: #202020;
-
     font-size: 1.25rem;
     font-weight: 500;
     color: white;
