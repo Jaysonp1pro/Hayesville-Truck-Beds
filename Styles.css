@@ -94,30 +94,42 @@ body {
 .locationInfo {
     background: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: 5vh auto;
     width: 90vw;
-    height: 55vh;
-    padding: 0 40px;
+    height: auto;
+    min-height: 55vh;
+    padding: 20px;
     box-sizing: border-box;
     border: 2px solid #cacaca50;
     border-radius: 25px;
 }
 
 .locationInfo iframe {
-    height: 95%;
-    width: 40vw;
     border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .locationInfo iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    #businessHoursTable {
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+    }
 }
 
 .locationInfo tr, td {
     padding: 0.25rem;
 }
 
-.locationInfo table {
-    table-layout: fixed;
-    overflow-y: hidden;
+#businessHoursTable {
+    height: 100%;
 }
 
 
