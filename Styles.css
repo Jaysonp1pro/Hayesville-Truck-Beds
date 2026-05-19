@@ -48,11 +48,11 @@ body {
 }
 
 #aboutButton:hover {
-    color: rgb(157, 184, 212);
+    color: rgb(255, 222, 57);
 }
 
 #contactButton:hover {
-    color: rgb(157, 184, 212)
+    color: rgb(255, 222, 57);
 }
 
 #companyName {
@@ -146,7 +146,7 @@ body {
     align-items: flex-start;
     flex-direction: column;
     width: 45%;
-    row-gap: 20px;
+    row-gap: 5vh;
 }
 
 .textBusinessInfoDiv table, #phoneNum {
@@ -182,8 +182,53 @@ body {
 .infoHeading img {
     aspect-ratio: 1/1;
     object-fit: cover;
-    width: 5vw;
+    width: 3vmax;
     height: auto;
+}
+
+.workGallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    flex-wrap: wrap;
+    width: 85vw;
+    height: auto;
+    background-color: white;
+    border-radius: 25px;
+    border: 2px solid #cacaca50;
+    box-sizing: border-box;
+    margin: 5vmin auto;
+    padding: 20px;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.galleryButton {
+    background-color: transparent;
+    border-radius: 15px;
+    border: 2px solid #cacaca;
+    width: 8vmax;
+    aspect-ratio: 5/4;
+}
+
+.galleryButton:hover {
+    background-color:#37373770;
+}
+
+.galleryButton img {
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 5/4;
+}
+
+.imageViewer {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 #authorizedGallery p {
