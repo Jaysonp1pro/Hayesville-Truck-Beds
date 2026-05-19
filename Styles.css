@@ -68,8 +68,8 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 5vh auto;
-    width: 90vw;
-    height: 40vh;
+    width: 85vw;
+    height: auto;
     padding: 0 40px;
     box-sizing: border-box;
     border: 2px solid #cacaca50;
@@ -98,7 +98,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 5vh auto;
-    width: 90vw;
+    width: 85vw;
     height: auto;
     min-height: 55vh;
     padding: 20px;
@@ -129,13 +129,6 @@ body {
     padding: 0.25rem;
 }
 
-#businessHoursLabel img {
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    width: 7vw;
-    height: auto;
-}
-
 .businessSpecificsInfoDiv {
     height: 50%;
     width: 100%;
@@ -149,11 +142,48 @@ body {
 
 .textBusinessInfoDiv {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: flex-start;
-    flex-direction: row;
+    flex-direction: column;
     width: 45%;
     row-gap: 20px;
+}
+
+.textBusinessInfoDiv table, #phoneNum {
+    color: #415161;
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 425;
+}
+
+.textBusinessInfoDiv p {
+    color:#415161;
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 375;
+}
+
+.infoGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.infoHeading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.infoHeading img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 5vw;
+    height: auto;
 }
 
 #authorizedGallery p {
