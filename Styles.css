@@ -195,6 +195,12 @@ body {
     flex-direction: column;
 }
 
+.infoHeading p {
+    margin: 0;
+    text-align: center;
+    line-height: 1.2;
+}
+
 .infoHeading img {
     aspect-ratio: 1/1;
     object-fit: cover;
