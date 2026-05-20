@@ -227,8 +227,52 @@ body {
     height: 100vh;
     background-color: rgba(0,0,0,0.75);
     position: fixed;
-    top: 0;
-    left: 0;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.imageViewerContent {
+    position: relative;
+
+}
+
+.imageViewer img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    display: block;
+    border:#415161 solid;
+    background-color: #ffffff17;
+    border-radius: 15px;
+}
+
+.imageViewer button {
+    height: auto;
+    width: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background-color: #0000004b;
+    border-radius: 10px;
+}
+
+.imageViewer button:hover {
+    background-color: #ffde39a8;
+}
+
+.imageViewer p {
+    height: auto;
+    width: auto;
+    margin: 0;
+    font-size: 4cqw;
+    color: white;
 }
 
 #authorizedGallery p {
