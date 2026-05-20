@@ -238,7 +238,7 @@ body {
 .imageViewer button {
     height: auto;
     width: 5vw;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     aspect-ratio: 1/1;
@@ -259,10 +259,6 @@ body {
     margin: 0;
     font-size: 4cqw;
     color: white;
-}
-
-.hidden_imgviewer {
-    display: none;
 }
 
 @media (max-width: 768px) {
