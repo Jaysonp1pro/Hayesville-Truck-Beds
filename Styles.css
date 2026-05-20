@@ -112,19 +112,6 @@ body {
     width: 50%;
 }
 
-@media (max-width: 768px) {
-    .locationInfo iframe {
-        width: 100%;
-        height: 300px;
-    }
-
-    #businessHoursTable {
-        align-items: center;
-        width: 100%;
-        margin-top: 20px;
-    }
-}
-
 .locationInfo tr, td {
     padding: 0.25rem;
 }
@@ -236,7 +223,6 @@ body {
 
 .imageViewerContent {
     position: relative;
-
 }
 
 .imageViewer img {
@@ -251,14 +237,14 @@ body {
 
 .imageViewer button {
     height: auto;
-    width: 8vw;
+    width: 5vw;
     display: flex;
     justify-content: center;
     align-items: center;
     aspect-ratio: 1/1;
     position: absolute;
-    top: 0.75rem;
-    right: 0.75rem;
+    top: 0.25rem;
+    right: 0.25rem;
     background-color: #0000004b;
     border-radius: 10px;
 }
@@ -273,6 +259,29 @@ body {
     margin: 0;
     font-size: 4cqw;
     color: white;
+}
+
+.hidden_imgviewer {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .locationInfo iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    #businessHoursTable {
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .imageViewer button {
+        width: 8.5vw;
+    }
+
+    
 }
 
 #authorizedGallery p {
