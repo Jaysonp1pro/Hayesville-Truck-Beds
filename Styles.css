@@ -136,11 +136,38 @@ body {
     row-gap: 5vh;
 }
 
-.textBusinessInfoDiv table, #phoneNum {
+.textBusinessInfoDiv table, .businessContacts {
     color: #415161;
     margin: 0;
     font-size: 1.25rem;
     font-weight: 425;
+}
+
+.businessContactsDiv {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.resize-container {
+  width: 100%;       /* Can be any width, percentages, vw, etc. */
+  max-width: 600px;  /* Example boundary */
+  border: 1px solid #ccc;
+}
+
+.scalable-text {
+  display: block;
+  width: 100%;       /* Forces the SVG to fill the parent div */
+  height: auto;      /* Maintains the aspect ratio */
+}
+
+/* Style your text inside the SVG */
+.scalable-text text {
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  fill: #415161; /* Use 'fill' instead of 'color' for SVGs */
 }
 
 .textBusinessInfoDiv p {
@@ -156,6 +183,8 @@ body {
     align-items: center;
     justify-content: center;
     column-gap: 15px;
+    width: 90%;
+    margin: 0;
 }
 
 .infoHeading {
@@ -276,6 +305,18 @@ body {
 
     .imageViewer button {
         width: 8.5vw;
+    }
+
+    .textBusinessInfoDiv {
+        width: 100%;       /* Forces the text container to fill the screen on mobile */
+        margin-top: 30px;  /* Adds some breathing room below the Google Map */
+        gap: 3vh;          /* Packs the sections a little tighter on small screens */
+    }
+
+    .infoGroup {
+        width: 100%;       /* Allows the individual groups to span full width */
+        flex-direction: column; /* Stacks the icon above the text/table on mobile */
+        text-align: center;
     }
 
     
